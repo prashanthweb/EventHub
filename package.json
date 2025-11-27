@@ -1,0 +1,11 @@
+{
+  "name": "eventhub",
+  "private": true,
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "dependencies": {
+    "mongodb": "^6.20.0"
+  }
+}
