@@ -126,6 +126,11 @@ function AppContent() {
   );
 }
 
+const API = process.env.REACT_APP_API_URL;
+fetch(`${API}/api/events`)
+  .then(res => res.json())
+  .then(data => console.log(data));
+
 function App() {
   return (
     <ThemeProvider theme={darkTheme}>
